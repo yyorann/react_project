@@ -13,8 +13,6 @@ class App extends Component {
     };
   }
 
-
-  
   render() {
     return (
       <div className="App">
@@ -27,7 +25,7 @@ class App extends Component {
           <button
             onClick={() => {
               this.setState(
-                () => ({ name: { firstName: "Yihua", lastName: "Zhang" } }),
+                () => ({ name: { firstName: "Yihua 2", lastName: "Zhang 2" } }),
                 () => console.log(this.state)
               );
             }}
@@ -42,19 +40,19 @@ class App extends Component {
 
 export default App;
 
-return (
-  <div class="App">
-    <header class="App-header">
-      <img src={logo} class="App-logo" alt="logo" />
-      <p>
-        Hi {this.state.name.firstName} {this.state.name.lastName}, I work at
-        {this.state.company}
-      </p>
-      <button onClick="updateText()"> Change Name</button>
-    </header>
-  </div>
-);
+// return (
+//   <div class="App">
+//     <header class="App-header">
+//       <img src={logo} class="App-logo" alt="logo" />
+//       <p>
+//         Hi {this.state.name.firstName} {this.state.name.lastName}, I work at
+//         {this.state.company}
+//       </p>
+//       <button onClick="updateText()"> Change Name</button>
+//     </header>
+//   </div>
+// );
 
-function updateText() {
-  document.getElementsByTagName('button')[0].textContent = 
-}
+// function updateText() {
+//   document.getElementsByTagName('button')[0].textContent =
+// }
